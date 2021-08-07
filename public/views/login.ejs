@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<head>
+    <meta name="view-port" content="width=device-width, initial-scale = 1.0">
+<title>Login</title>
+<link rel="stylesheet" type="text/css" href="../css/style.css">
+</head>
+<html>
+    <body>
+<div class="buttons">
+    <h2>Login</h2>
+    <h2>Register</h2>
+</div>
+<section>
+  <form action="../server.js">
+<!-- email address input field -->
+<label for="email">Email Address:</label><br>
+<input type="email" id="email" placeholder="youremail@.com" required><br>
+<!-- password field -->
+<label for="password">Password:</label><br>
+<input type="password" id="password" placeholder="123Y$$3" required><br>
+<input type="submit" id="submit">
+  </form>
+</section>
+
+<script src="https://www.gstatic.com/firebasejs/4.8.1/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyA81SeD7zGY6-y7-b-i5g4kom0E8y9g04w",
+    authDomain: "testproject-7bb19.firebaseapp.com",
+    databaseURL: "https://fir-web-login-8b7c5.firebaseio.com",
+    projectId: "testproject-7bb19",
+    storageBucket: "testproject-7bb19.appspot.com",
+    messagingSenderId: "1039015672217"
+  };
+  firebase.initializeApp(config);
+</script>
+<script src="../scripts/script.js"></script>
+    </body>
+</html>
